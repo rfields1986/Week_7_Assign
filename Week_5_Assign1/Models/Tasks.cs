@@ -1,9 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.IO;
-using System.Runtime.InteropServices;
 
-namespace Week_5_Assign1.Models
+namespace Week_7_Assign1.Models
 {
     class Tasks : Ticket
     {

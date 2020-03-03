@@ -1,8 +1,7 @@
-﻿
-using System;
+﻿using System;
 using System.IO;
 
-namespace Week_5_Assign1.Models
+namespace Week_7_Assign1.Models
 {
     class Enhancements : Ticket
     {

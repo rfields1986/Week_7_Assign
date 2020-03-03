@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace Week_5_Assign1.Models
+namespace Week_7_Assign1.Models
 {
     public abstract class Ticket
     {

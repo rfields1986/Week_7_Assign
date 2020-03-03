@@ -1,9 +1,8 @@
 ﻿using System;
-using System.IO;
-using Week_5_Assign1.Models;
 using System.Linq;
+using Week_7_Assign1.Models;
 
-namespace Week_5_Assign
+namespace Week_7_Assign1
 {
     class Program
     {
