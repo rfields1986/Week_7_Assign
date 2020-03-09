@@ -59,10 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\BugsDefects.cs" />
+    <Compile Include="Models\BugTicketBook.cs" />
     <Compile Include="Models\Enhancements.cs" />
+    <Compile Include="Models\EnhancementTicketBook.cs" />
+    <Compile Include="Models\ITicketBook.cs" />
     <Compile Include="Models\Tasks.cs" />
+    <Compile Include="Models\TaskTicketBook.cs" />
     <Compile Include="Models\Ticket.cs" />
-    <Compile Include="Models\TicketBook.cs" />
+    <Compile Include="Models\MasterTicketBook.cs" />
+    <Compile Include="Models\TicketFinder.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
