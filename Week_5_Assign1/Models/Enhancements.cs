@@ -11,7 +11,7 @@ namespace Week_7_Assign1.Models
         public string estimate { get; set; }
         public override void Display()
         {
-            Console.Clear();
+            
             Console.WriteLine("Enhancement Ticket File\n");
             string[] header = { "TicketID", "Summary", "Status", "Priority", "Submitter", "Assigned", "Watching", "Software", "Cost", "Reason", "Estimate" };
             string[] body = { $"{ticketID}", $"{ticketSummary}", $"{ticketStatus}", $"{ticketPriority}", $"{submitedBy}", $"{assignedTo}", $"{watchedBy}", $"{software}", $"{cost}", $"{reason}", $"{estimate}" };

@@ -8,7 +8,7 @@ namespace Week_7_Assign1.Models
         public string severity { get; set; }
         public override void Display()
         {
-            Console.Clear();
+            
             Console.WriteLine("Bug/Defect Ticket File\n");
             string[] header = { "TicketID", "Summary", "Status", "Priority", "Submitter", "Assigned", "Watching", "Severity" };
             string[] body = { $"{ticketID}", $"{ticketSummary}", $"{ticketStatus}", $"{ticketPriority}", $"{submitedBy}", $"{assignedTo}", $"{watchedBy}", $"{severity}" };

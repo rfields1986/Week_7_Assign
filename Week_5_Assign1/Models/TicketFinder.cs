@@ -12,8 +12,8 @@ namespace Week_7_Assign1.Models
 
         public void SearchByID()
         {
-            
-            
+
+
             int input;
             Console.WriteLine("What is the ticket number you want to search for?");
             Int32.TryParse(Console.ReadLine(), out input);
@@ -22,10 +22,15 @@ namespace Week_7_Assign1.Models
             var ticketSearch = searchList.ticketBook.Where(t => t.ticketID.Equals(input));
             if (ticketCheck == true)
             {
+                int x = 1;
                 foreach (Ticket t in ticketSearch)
                 {
+                    Console.Clear();
+                    Console.WriteLine($"Number {x++} of {ticketSearch.Count()} results\n\n");
                     t.Display();
                 }
+                searchList.ticketBook.Clear();
+
             }
             else if (ticketCheck == false)
             {
@@ -49,10 +54,18 @@ namespace Week_7_Assign1.Models
             var ticketSearch = searchList.ticketBook.Where(t => t.submitedBy.Equals(input));
             if (ticketCheck == true)
             {
+                int x = 1;
                 foreach (Ticket t in ticketSearch)
                 {
+                    Console.Clear();
+                    Console.WriteLine($"Number {x++} of {ticketSearch.Count()} results\n\n");
                     t.Display();
+                    Console.WriteLine("\n\nPress Any Key");
+                    Console.ReadKey();
                 }
+                searchList.ticketBook.Clear();
+
+
             }
             else if (ticketCheck == false)
             {
@@ -60,8 +73,7 @@ namespace Week_7_Assign1.Models
                 Console.WriteLine($"Search Term \"{input}\" does not match any records");
             }
 
-            Console.WriteLine("\n Press Any Key");
-            Console.ReadKey();
+
 
         }
 

@@ -9,7 +9,7 @@ namespace Week_7_Assign1.Models
         public string DueDate { get; set; }
         public override void Display()
         {
-            Console.Clear();
+            
             Console.WriteLine("Task Ticket File\n");
             string[] header = { "TicketID", "Summary", "Status", "Priority", "Submitter", "Assigned", "Watching", "Project Name", "Due Date" };
             string[] body = { $"{ticketID}", $"{ticketSummary}", $"{ticketStatus}", $"{ticketPriority}", $"{submitedBy}", $"{assignedTo}", $"{watchedBy}", $"{projectName}", $"{DueDate}" };
